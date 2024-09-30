@@ -45,8 +45,8 @@ function plot_si_vs_tr(A_values, A_map, T1_map, T2_map, TR_values, TE)
         text(text_x, text_y, legend_text, 'Color', 'white', 'FontSize', 10, 'FontWeight', 'bold', ...
              'BackgroundColor', 'black', 'Margin', 5, 'VerticalAlignment', 'top');
 
-        % Optional: Save the figure to a file
-        saveas(gcf, sprintf('MRI_Image_TR_%d.png', TR));
+        % Save the figure as a .fig file
+        savefig(gcf, sprintf('MRI_Image_TR_%d.fig', TR));
     end
 
     % Plotting SI vs TR
